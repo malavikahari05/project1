@@ -55,5 +55,46 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        // Collect form data
+        const formData = {
+            name: document.getElementById('name').value,
+            age: document.getElementById('age').value,
+            gender: document.getElementById('gender').value,
+            occupation: document.getElementById('occupation').value,
+            hobbies: document.getElementById('hobbies').value,
+            inculcateHobbies: document.getElementById('inculcateHobbies').value,
+            badHabits: document.getElementById('badHabits').value
+        };
+    
+        // Convert form data to a JSON string
+        const jsonData = JSON.stringify(formData, null, 2);
+    
+        // Create a Blob from the JSON data
+        const blob = new Blob([jsonData], { type: 'application/json' });
+    
+        // Create a link element
+        const link = document.createElement('a');
+    
+        // Set the download attribute with a filename
+        link.download = 'user_data.json';
+    
+        // Create an object URL for the Blob
+        link.href = URL.createObjectURL(blob);
+    
+        // Append the link to the document body
+        document.body.appendChild(link);
+    
+        // Programmatically click the link to trigger the download
+        link.click();
+    
+        // Remove the link from the document
+        document.body.removeChild(link);
+    });
+    </script>
+    
 </body>
 </html>
