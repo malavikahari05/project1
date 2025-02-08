@@ -68,17 +68,17 @@ select {
 input[type="text"]:focus,
 input[type="number"]:focus,
 select:focus {
-    border-color: #ff7e5f;
+    border-color: #f9f1ef;
 }
 
 /* Button Styling */
 button {
     width: 100%;
     padding: 12px;
-    background: #ff7e5f;
+    background: #8c121c;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #f1ecec;
     font-size: 1.1rem;
     cursor: pointer;
     transition: background 0.3s ease;
