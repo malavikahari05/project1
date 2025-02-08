@@ -1,0 +1,20 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malavikahari05/project1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malavikahari05/project1/issues"
+  },
+  "homepage": "https://github.com/malavikahari05/project1#readme",
+  "description": ""
+}
