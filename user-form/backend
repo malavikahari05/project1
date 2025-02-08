@@ -1,0 +1,6 @@
+user-form/                  (or whatever you name your folder)
+├── index.js                (Node.js server code)
+├── node_modules/           (Automatically created when you install dependencies)
+├── package.json            (Project metadata and dependencies)
+└── public/                 (Folder for static files like HTML, CSS, JS)
+    └── index.html          (Your form HTML file)
