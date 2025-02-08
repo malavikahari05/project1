@@ -16,5 +16,9 @@
     "url": "https://github.com/malavikahari05/project1/issues"
   },
   "homepage": "https://github.com/malavikahari05/project1#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
 }
